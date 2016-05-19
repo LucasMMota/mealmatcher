@@ -96,7 +96,7 @@ class UploadHandler
             'min_height' => 1,
             // Set the following option to false to enable resumable uploads:
             'discard_aborted_uploads' => true,
-            // Set to 0 to use the GD library to scale and orient images,
+            // Set to 0 to use the GD library to scale and orient img,
             // set to 1 to use imagick (if installed, falls back to GD),
             // set to 2 to use the ImageMagick convert binary directly:
             'image_library' => 1,
@@ -121,10 +121,10 @@ class UploadHandler
             'image_versions' => array(
                 // The empty image version key defines options for the original image:
                 '' => array(
-                    // Automatically rotate images based on EXIF meta data:
+                    // Automatically rotate img based on EXIF meta data:
                     'auto_orient' => true
                 ),
-                // Uncomment the following to create medium sized images:
+                // Uncomment the following to create medium sized img:
                 /*
                 'medium' => array(
                     'max_width' => 800,
@@ -723,7 +723,7 @@ class UploadHandler
             $dst_y = 0 - ($new_height - $max_height) / 2;
             $new_img = imagecreatetruecolor($max_width, $max_height);
         }
-        // Handle transparency in GIF and PNG images:
+        // Handle transparency in GIF and PNG img:
         switch ($type) {
             case 'gif':
             case 'png':

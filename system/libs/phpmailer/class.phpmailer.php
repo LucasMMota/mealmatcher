@@ -2444,10 +2444,10 @@ class PHPMailer
 
     /**
      * Add an embedded (inline) attachment from a file.
-     * This can include images, sounds, and just about any other document type.
+     * This can include img, sounds, and just about any other document type.
      * These differ from 'regular' attachmants in that they are intended to be
      * displayed inline with the message, not just attached for download.
-     * This is used in HTML messages that embed the images
+     * This is used in HTML messages that embed the img
      * the HTML refers to using the $cid value.
      * @param string $path Path to the attachment.
      * @param string $cid Content ID of the attachment; Use this to reference
@@ -2491,9 +2491,9 @@ class PHPMailer
 
     /**
      * Add an embedded stringified attachment.
-     * This can include images, sounds, and just about any other document type.
-     * Be sure to set the $type to an image type for images:
-     * JPEG images use 'image/jpeg', GIF uses 'image/gif', PNG uses 'image/png'.
+     * This can include img, sounds, and just about any other document type.
+     * Be sure to set the $type to an image type for img:
+     * JPEG img use 'image/jpeg', GIF uses 'image/gif', PNG uses 'image/png'.
      * @param string $string The attachment binary data.
      * @param string $cid Content ID of the attachment; Use this to reference
      *        the content when using an embedded image in HTML.
@@ -2762,7 +2762,7 @@ class PHPMailer
 
     /**
      * Create a message from an HTML string.
-     * Automatically makes modifications for inline images and backgrounds
+     * Automatically makes modifications for inline img and backgrounds
      * and creates a plain-text version by converting the HTML.
      * Overwrites any existing values in $this->Body and $this->AltBody
      * @access public
@@ -2776,7 +2776,7 @@ class PHPMailer
         preg_match_all("/(src|background)=[\"'](.*)[\"']/Ui", $message, $images);
         if (isset($images[2])) {
             foreach ($images[2] as $i => $url) {
-                // do not change urls for absolute images (thanks to corvuscorax)
+                // do not change urls for absolute img (thanks to corvuscorax)
                 if (!preg_match('#^[A-z]+://#', $url)) {
                     $filename = basename($url);
                     $directory = dirname($url);

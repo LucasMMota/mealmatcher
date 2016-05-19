@@ -1,5 +1,33 @@
-{$head}
-<body background="/img/back.jpg">
+<?php /* Smarty version Smarty-3.1.19, created on 2016-05-18 21:00:09
+         compiled from "C:\wamp\www\mealmatcher\app\views\templates\index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:25354573d02095eec38-00563882%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'bd5fbadb4164b6026ef53648659a2a41b0fa84c7' => 
+    array (
+      0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\index.tpl',
+      1 => 1463616003,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '25354573d02095eec38-00563882',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'head' => 0,
+    'footer' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_573d02096712a4_83988276',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_573d02096712a4_83988276')) {function content_573d02096712a4_83988276($_smarty_tpl) {?><?php echo $_smarty_tpl->tpl_vars['head']->value;?>
+
+<body background="back.jpg">
+
 <div id="fb-root"></div>
 <script>
     window.fbAsyncInit = function () {
@@ -64,4 +92,5 @@
     </div>
 </div>
 </body>
-{$footer}
+<?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
+<?php }} ?>

@@ -29,3 +29,6 @@ public_html
     index.php - arquivo inicial do sistema.
 
 system - core do framework
+
+Obs.:
+A index.tlp já está ok, no padrão, com os caminhos corretos.

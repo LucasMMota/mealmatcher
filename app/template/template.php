@@ -26,12 +26,18 @@ class template
             $this->path_root = 'http://' . $_SERVER['HTTP_HOST'];
         }
         //css site
-        /*$this->css[] = $this->path_root . '/files/css/bootstrap.css';
-        $this->css[] = $this->path_root . '/files/css/bootstrap-responsive.css';
-        $this->css[] = $this->path_root . '/files/css/ionicons.min.css';
-        *//* javaScript site */
+        $this->css[] = $this->path_root . '/files/css/materialize.min.css';
+        $this->css[] = $this->path_root . '/files/css/style.css';
+
+        /* javaScript site */
+        $this->js[] = $this->path_root . '/files/js/jquery-2.1.1.min.js';
+        $this->js[] = $this->path_root . '/files/js/materialize.min.js';
+        $this->js[] = $this->path_root . '/files/js/init.js';
+        $this->js[] = $this->path_root . '/files/js/FacebookSDK.js';
+
+        /*
+        */
         /*$this->js[] = $this->path_root . '/files/js/jQuery/jquery.js';
-        $this->js[] = $this->path_root . '/files/js/bootstrap/bootstrap-transition.js';
         $this->js[] = $this->path_root . '/files/js/bootstrap/bootstrap-carousel.js';
         $this->js[] = $this->path_root . '/files/js/bootstrap/bootstrap-alert.js';
         $this->js[] = $this->path_root . '/files/js/bootstrap/bootstrap-modal.js';
