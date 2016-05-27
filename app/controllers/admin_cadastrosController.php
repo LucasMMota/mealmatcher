@@ -1,6 +1,12 @@
 <?php
 
-class combinacao extends controller
+/**
+ * Created by PhpStorm.
+ * User: LM
+ * Date: 01/11/2014
+ * Time: 17:46
+ */
+class pratos extends controller
 {
 
     function index_action()

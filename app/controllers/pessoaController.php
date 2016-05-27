@@ -6,7 +6,7 @@
  * Date: 01/11/2014
  * Time: 17:46
  */
-class Index extends controller
+class pessoa extends controller
 {
 
     function index_action()
