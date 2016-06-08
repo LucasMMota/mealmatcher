@@ -4023,7 +4023,7 @@ class Smarty_Internal_Templateparser #line 80 "smarty_internal_templateparser.ph
     #line 887 "smarty_internal_templateparser.y"
     function yy_r138()
     {
-        $this->_retvalue = '[' . $this->compiler->compileTag('private_special_variable', array(), '[\'section\'][\'' . $this->yystack[$this->yyidx + - 1]->minor . '\'][\'index\']') . ']';
+        $this->_retvalue = '[' . $this->compiler->compileTag('private_special_variable', array(), '[\'section\'][\'' . $this->yystack[$this->yyidx + - 1]->minor . '\'][\'pessoa\']') . ']';
     }
     #line 2775 "smarty_internal_templateparser.php"
     #line 891 "smarty_internal_templateparser.y"

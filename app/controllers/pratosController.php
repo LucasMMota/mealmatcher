@@ -8,14 +8,16 @@
  */
 class pratos extends controller
 {
-
-    function index_action()
+    public function getPratos()
     {
-        $this->template->setTitle("Index");
-        //$this->template->fetchJS('files/js/index/index.js');
-        $this->template->run();
-        $this->smarty->display("index.tpl");
+        $pratosModel = new PratosModel();
+        $pratos = $pratosModel->getAll();
+
+        $arrPratos = array();
+        if ($pratos)
+            foreach ($pratos as $prato) {
+                $arrPratos[$prato['pra_id']] = $prato['pra_nome'];
+            }
+        return $arrPratos;
     }
 }
-
-?>

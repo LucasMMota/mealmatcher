@@ -12,9 +12,9 @@ class pratos extends controller
     function index_action()
     {
         $this->template->setTitle("Index");
-        //$this->template->fetchJS('files/js/index/index.js');
+        //$this->template->fetchJS('files/js/pessoa/pessoa.js');
         $this->template->run();
-        $this->smarty->display("index.tpl");
+        $this->smarty->display("pessoa.tpl");
     }
 }
 

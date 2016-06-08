@@ -1,10 +1,10 @@
 <?php
 
-define('DBHOST', '10.0.132.99');
+define('DBHOST', '127.0.0.1');
 define('DBPORT', '3306');
 define('DBUSER', 'root');
 define('DBPASS', '');
-define('DBNAME', 'dev_grupocb');
+define('DBNAME', 'mealmacther');
 define('DBENCODING', 'utf8');
 
 define('DS', DIRECTORY_SEPARATOR);

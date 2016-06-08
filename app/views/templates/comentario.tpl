@@ -1,36 +1,4 @@
-<?php
-session_start();
-
-#se não logado é redirecionado
-if (!isset($_SESSION['logado']) || !$_SESSION['logado']) {
-    header("Location: /index.php");
-}
-?>
-
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="theme-color" content="#ef5350">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-
-    <title>Meal Matcher</title>
-
-    <!-- CSS  -->
-
-    <link href="css/materialize.css" type="text/css" rel="stylesheet"
-          media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet"
-          media="screen,projection"/>
-		  
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        .direita {
-            float: right;
-        }
-    </style>
-</head>
+{$head}
 <body style="background-color: #efebe9">
 
 		<ul id="dropdown1" class="dropdown-content">
@@ -224,4 +192,4 @@ if (!isset($_SESSION['logado']) || !$_SESSION['logado']) {
 
 
 </body>
-</html>
+{$footer}

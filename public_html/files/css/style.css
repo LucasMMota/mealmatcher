@@ -7,5 +7,26 @@
  */
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
+}
+
+/*************************************/
+.mh-95 {
+    min-height: 95px;
+}
+
+.collapsible-header i{
+    width: 8px !important;
+}
+
+.comment-det{
+    padding: 15px 15px !important;
+}
+
+.comment-comm{
+    padding: 2% 5% 7% 5%!important;
+}
+
+.collection-custom{
+    margin: -0.5rem 5% 1rem 5% !important;
 }

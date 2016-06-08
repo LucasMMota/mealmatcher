@@ -1,5 +1,5 @@
 ############################################
-## default index file
+## default pessoa file
 
     DirectoryIndex index.php
 
@@ -30,7 +30,7 @@
     RewriteCond %{REQUEST_FILENAME} !-l
 
 ############################################
-## reescrever tudo sempre para index.php
+## reescrever tudo sempre para pessoa.php
 
 	RewriteRule ^(.*)$ index.php?url=$1
 

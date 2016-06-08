@@ -927,7 +927,7 @@ class Smarty extends Smarty_Internal_TemplateBase
         } else {
             $v = preg_replace('#(\w+)(/|\\\\){1,}#', '$1$2', rtrim($template_dir, '/\\')) . DS;
             if ($key !== null) {
-                // override directory at specified index
+                // override directory at specified pessoa
                 $this->template_dir[$key] = $v;
             } else {
                 // append new directory
@@ -942,9 +942,9 @@ class Smarty extends Smarty_Internal_TemplateBase
     /**
      * Get template directories
      *
-     * @param mixed $index index of directory to get, null to get all
+     * @param mixed $index pessoa of directory to get, null to get all
      *
-     * @return array|string list of template directories, or directory of $index
+     * @return array|string list of template directories, or directory of $pessoa
      */
     public function getTemplateDir($index = null)
     {
@@ -1001,7 +1001,7 @@ class Smarty extends Smarty_Internal_TemplateBase
         } else {
             $v = preg_replace('#(\w+)(/|\\\\){1,}#', '$1$2', rtrim($config_dir, '/\\')) . DS;
             if ($key !== null) {
-                // override directory at specified index
+                // override directory at specified pessoa
                 $this->config_dir[$key] = rtrim($v, '/\\') . DS;
             } else {
                 // append new directory
@@ -1017,7 +1017,7 @@ class Smarty extends Smarty_Internal_TemplateBase
     /**
      * Get config directory
      *
-     * @param mixed $index index of directory to get, null to get all
+     * @param mixed $index pessoa of directory to get, null to get all
      *
      * @return array|string configuration directory
      */

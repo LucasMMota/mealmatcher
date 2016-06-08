@@ -504,7 +504,7 @@ class UploadHandler
     }
 
     protected function handle_form_data($file, $index) {
-        // Handle form data, e.g. $_REQUEST['description'][$index]
+        // Handle form data, e.g. $_REQUEST['description'][$pessoa]
     }
 
     protected function get_scaled_image_file_paths($file_name, $version) {

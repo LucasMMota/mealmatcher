@@ -139,7 +139,7 @@ class model
         $offset = ($offset != NULL ? "OFFSET {$offset}" : NULL);
         $orderby = ($orderby != NULL ? "ORDER BY {$orderby}" : NULL);
         $sql = "SELECT {$fields} FROM {$this->_table} {$where} {$group_by} {$orderby} {$limit} {$offset} {$freeQuerie}";
-        //echo $sql.'<br / >';
+        //echo $sql.'<br / >'; die;
 
         $q = $this->db->prepare("SELECT {$fields} FROM {$this->_table} {$where} {$group_by} {$orderby} {$limit} {$offset} {$freeQuerie}");
         $q->execute();

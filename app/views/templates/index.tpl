@@ -1,5 +1,5 @@
 {$head}
-<body background="/img/back.jpg">
+<body background="/files/img/back.jpg">
 <div id="fb-root"></div>
 <script>
     window.fbAsyncInit = function () {
@@ -48,8 +48,10 @@
                 <br> <br>
                 <br> <br>
                 <br> <br>
-                <br> <a href="Cadastre.php" id="login-button"
+                <br> <a href="/index/cadastro" id="login-button"
                         class="btn-large waves-effect waves-light orange">Cadastrar</a> <br>
+                <br> <a href="/index/login" id="login-button"
+                        class="btn-large waves-effect waves-light orange">Login</a> <br>
                 <br> <br>
                 <br>
 

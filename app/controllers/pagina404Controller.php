@@ -10,5 +10,4 @@ class pagina404 extends controller {
         $this->template->run();
         $this->smarty->display('404.tpl');
     }
-
 }

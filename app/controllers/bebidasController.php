@@ -8,14 +8,16 @@
  */
 class bebidas extends controller
 {
-
-    function index_action()
+    public function getBebidas()
     {
-        $this->template->setTitle("Index");
-        //$this->template->fetchJS('files/js/index/index.js');
-        $this->template->run();
-        $this->smarty->display("index.tpl");
+        $bebidasModel = new BebidasModel();
+        $bebidas = $bebidasModel->getAll();
+
+        $arrBebidas = array();
+        if ($bebidas)
+            foreach ($bebidas as $beb) {
+                $arrBebidas[$beb['beb_id']] = $beb['beb_nome'];
+            }
+        return $arrBebidas;
     }
 }
-
-?>

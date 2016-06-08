@@ -1,9 +1,11 @@
-<div class="nav-collapse">
-    <ul class="nav pull-right">
-        <li class="active"><a href="/">Início</a></li>
-        <li><a href="/servicos">Serviços</a></li>
-        <li><a href="/fotos">Fotos</a></li>
-        <li><a href="/sobre">Sobre</a></li>
-        <li><a href="/contato">Contato</a></li>
-    </ul>
-</div>
+{*
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="Top Matches.php">Top Matches</a></li>
+    <li><a href="/pessoa/sugestao">Sugerir</a></li>
+    <li><a href="Combinations.php">Combinações</a></li>
+</ul>
+
+<ul id="dropdown2" class="dropdown-content">
+    <li><a href="/pessoa/perfil">Meu Perfil</a></li>
+    <li><a href="/pessoa/matches">Meus Matches</a></li>
+</ul>*}

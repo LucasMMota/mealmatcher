@@ -844,7 +844,7 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
           newHeight = windowHeight * 0.9;
         }
 
-        // Animate image + set z-index
+        // Animate image + set z-pessoa
         if(origin.hasClass('responsive-img')) {
           origin.velocity({'max-width': newWidth, 'width': originalWidth}, {duration: 0, queue: false,
             complete: function(){
@@ -2846,14 +2846,14 @@ $(document).ready(function(){
         }
       }
 
-      // This function will transition the slide to any index of the next slide
+      // This function will transition the slide to any pessoa of the next slide
       function moveToSlide(index) {
         if (index >= $slides.length) index = 0;
         else if (index < 0) index = $slides.length -1;
 
         $active_index = $slider.find('.active').index();
 
-        // Only do if index changes
+        // Only do if pessoa changes
         if ($active_index != index) {
           $active = $slides.eq($active_index);
           $caption = $active.find('.caption');
@@ -5180,7 +5180,7 @@ DatePicker.prototype.formats = (function() {
         // Grab the first word from the string.
         var word = string.match( /\w+/ )[ 0 ]
 
-        // If there's no month index, add it to the date object
+        // If there's no month pessoa, add it to the date object
         if ( !dateObject.mm && !dateObject.m ) {
             dateObject.m = collection.indexOf( word ) + 1
         }
@@ -5317,7 +5317,7 @@ DatePicker.prototype.isDateOverlap = function( one, two ) {
     var calendar = this,
         firstDay = calendar.settings.firstDay ? 1 : 0
 
-    // When we’re working with a weekday index, compare the days.
+    // When we’re working with a weekday pessoa, compare the days.
     if ( _.isInteger( one ) && ( _.isDate( two ) || $.isArray( two ) ) ) {
         one = one % 7 + firstDay
         return one === calendar.create( two ).day + 1
@@ -5600,7 +5600,7 @@ DatePicker.prototype.nodes = function( isOpen ) {
                                 // The looped month and no classes.
                                 monthsCollection[ loopedMonth ], 0,
 
-                                // Set the value and selected index.
+                                // Set the value and selected pessoa.
                                 'value=' + loopedMonth +
                                 ( viewsetObject.month == loopedMonth ? ' selected' : '' ) +
                                 (
@@ -5682,7 +5682,7 @@ DatePicker.prototype.nodes = function( isOpen ) {
                                     // The looped year and no classes.
                                     loopedYear, 0,
 
-                                    // Set the value and selected index.
+                                    // Set the value and selected pessoa.
                                     'value=' + loopedYear + ( focusedYear == loopedYear ? ' selected' : '' )
                                 ]
                             }
