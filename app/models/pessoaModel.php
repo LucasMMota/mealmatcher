@@ -54,9 +54,10 @@ class PessoaModel extends model
         $tables = 'cad_combinacao as comb
                    LEFT JOIN cad_bebidas beb on beb.beb_id = comb.beb_id
                    LEFT JOIN cad_pratos pra on pra.pra_id = comb.pra_id
-                   LEFT JOIN cad_avaliacao ava on ava.com_id = comb.com_id';
+                   LEFT JOIN cad_avaliacao ava on ava.com_id = comb.com_id
+                   LEFT JOIN cad_pessoa as pes on pes.pes_id = comb.pes_id';
 
-        return $this->read($tables, array('comb.*, beb.*, pra.*, count(ava.ava_curtir) as votos'), null, "comb.com_id", 10, null, 'votos DESC, data Desc');
+        return $this->read($tables, array('comb.*, beb.*, pra.*, pes.*, count(ava.ava_curtir) as votos'), null, "comb.com_id", 10, null, 'votos DESC, data Desc');
     }
 
 }

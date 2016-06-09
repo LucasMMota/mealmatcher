@@ -9,8 +9,10 @@
 class index extends controller
 {
 
+
     function index_action()
     {
+        $this::logado();
         $this->template->setTitle("Início");
         //$this->template->fetchJS('files/js/pessoa/pessoa.js');
         $this->template->run();
@@ -52,6 +54,7 @@ class index extends controller
 
     public function login()
     {
+        $this::logado();
         $this->template->setTitle("login");
         //$this->template->fetchJS('files/js/pessoa/pessoa.js');
 
@@ -67,7 +70,7 @@ class index extends controller
             } else {
                 echo json_encode(['type' => 'error']);
             }
-                die;
+            die;
         }
 
         $this->template->run();
@@ -80,6 +83,12 @@ class index extends controller
         Header('Location: /');
     }
 
+    private static function logado()
+    {
+        if (isset($_SESSION['user'])){
+            Header("Location: /pessoa");
+        }
+    }
 }
 
 ?>

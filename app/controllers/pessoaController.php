@@ -22,10 +22,18 @@ class pessoa extends controller
 
     function index_action()
     {
-        $this->template->setTitle("Index");
-        //$this->template->fetchJS('files/js/pessoa/pessoa.js');
+        $this->template->setTitle("Meu Perfil");
+        $this->template->fetchJS('/files/js/pessoa/perfil.js');
+
+        $nAva = $this->pessoaModel->numeroAvaliacoes($_SESSION['user']['id'])[0];
+        $nMatches = $this->pessoaModel->numeroMatches($_SESSION['user']['id'])[0];
+
+        $this->pessoa['numAva'] = $nAva['total'];
+        $this->pessoa['numMatches'] = $nMatches['total'];
+
+        $this->smarty->assign('pessoa', $this->pessoa);
         $this->template->run();
-        $this->smarty->display("pessoa/index.tpl");
+        $this->smarty->display("pessoa/index_logado.tpl");
     }
 
     function perfil()
