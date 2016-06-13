@@ -111,6 +111,11 @@ class pessoa extends controller
             $arrMatch['com_descricao'] = $_POST['comentario'];
             $arrMatch['pes_id'] = $_SESSION['user']['id'];
             $arrMatch['com_nota'] = $_POST['nota'];
+            $arrMatch['data'] = $_POST['nota'];
+            /*
+            $dateTime = new DateTime('now');
+            $arrMatch['data'] = $dateTime->format('Y-m-d');
+            */
 
             if ($this->pessoaModel->novoMatch($arrMatch))
                 echo json_encode(array('type' => 'success'));

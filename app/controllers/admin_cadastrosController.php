@@ -6,7 +6,7 @@
  * Date: 01/11/2014
  * Time: 17:46
  */
-class pratos extends controller
+class admin_cadastros extends controller
 {
     function pratos(){
     	$this->template->setTitle("Pratos");
