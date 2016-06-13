@@ -77,7 +77,7 @@ class pessoa extends controller
             $bebida = isset($_POST['bebida']) ? $_POST['bebida'] : false;
 
             if (!$comida && !$bebida) {
-                echo json_encode(['type' => 'error']);
+                echo json_encode(array('type' => 'error'));
                 die;
             }
 
