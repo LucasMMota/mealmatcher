@@ -142,7 +142,7 @@ class pessoa extends controller
         $arrSugestao = $sugModel->minhasSugestoes($_SESSION['user']['id']);
         $sugestoes = array();
         foreach ($arrSugestao as $k => $sugestao) {
-            $arrImplode = [];
+            $arrImplode = array();
             if ($sugestao['sug_prato'])
                 $arrImplode[] = $sugestao['sug_prato'];
 
