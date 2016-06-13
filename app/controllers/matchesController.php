@@ -21,10 +21,6 @@ class matches extends controller
                 //var_dump($matches[$k]);die;
             }
 
-        //TODO pessoa sugerir
-        //TODO criar all matches
-        //TODO sobre
-
 
         $this->smarty->assign('matches', $matches);
         $this->smarty->assign('logado', isset($_SESSION['user']['id']));
