@@ -89,22 +89,19 @@ class template
     public
     function run()
     {
-        /*
-                //verifica permissao de acesso aos controllers administrativos (admin_)
-                if (strpos($_SESSION['currentPage'], 'admin_') !== false && !isset($_SESSION['admin'])) {
-                    //se esta tentando acessar pagina administrativa e nao esta logado, redireciona para tela de login
-                    header("Location:/admin");
-                    die;
-                }
-
-                //else{
-        */
+        
+        //verifica permissao de acesso aos controllers administrativos (admin_)
+        if (strpos($_SESSION['currentPage'], 'admin_') !== false && !isset($_SESSION['admin'])) {
+            //se esta tentando acessar pagina administrativa e nao esta logado, redireciona para tela de login
+            header("Location:/admin");
+            die;
+        } else {
         //Se estiver logado como admin, exibir o theme Admin
-        //    if (strpos($_SESSION['currentPage'], 'admin_') === 0 && isset($_SESSION['admin'])) {
-        //      $this->settings = new adminSite($this->smarty);
-        // } else {
-        $this->settings = new defaultSite($this->smarty);
-        // }
+        if (strpos($_SESSION['currentPage'], 'admin_') === 0 && isset($_SESSION['admin'])) {
+            $this->settings = new adminSite($this->smarty);
+        } else {
+            $this->settings = new defaultSite($this->smarty);
+        }
 
         $this->smarty->assign('path_root', $this->path_root);
         $this->smarty->assign('title', $this->title);
