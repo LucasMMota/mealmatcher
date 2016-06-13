@@ -25,8 +25,10 @@ class pessoa extends controller
         $this->template->setTitle("Meu Perfil");
         $this->template->fetchJS('/files/js/pessoa/perfil.js');
 
-        $nAva = $this->pessoaModel->numeroAvaliacoes($_SESSION['user']['id'])[0];
-        $nMatches = $this->pessoaModel->numeroMatches($_SESSION['user']['id'])[0];
+        $nAva = $this->pessoaModel->numeroAvaliacoes($_SESSION['user']['id']);
+        $nAva = $nAva[0];
+        $nMatches = $this->pessoaModel->numeroMatches($_SESSION['user']['id']);
+        $nMatches = $nMatches[0];
 
         $this->pessoa['numAva'] = $nAva['total'];
         $this->pessoa['numMatches'] = $nMatches['total'];
@@ -41,8 +43,10 @@ class pessoa extends controller
         $this->template->setTitle("Meu Perfil");
         $this->template->fetchJS('/files/js/pessoa/perfil.js');
 
-        $nAva = $this->pessoaModel->numeroAvaliacoes($_SESSION['user']['id'])[0];
-        $nMatches = $this->pessoaModel->numeroMatches($_SESSION['user']['id'])[0];
+        $nAva = $this->pessoaModel->numeroAvaliacoes($_SESSION['user']['id']);
+        $nAva = $nAva[0];
+        $nMatches = $this->pessoaModel->numeroMatches($_SESSION['user']['id']);
+        $nMatches = $nMatches[0];
 
         $this->pessoa['numAva'] = $nAva['total'];
         $this->pessoa['numMatches'] = $nMatches['total'];
@@ -121,8 +125,10 @@ class pessoa extends controller
         require_once(CONTROLLERS . DS . 'pratosController.php');
         require_once(CONTROLLERS . DS . 'bebidasController.php');
 
-        $this->smarty->assign('pratos', (new pratos())->getPratos());
-        $this->smarty->assign('bebidas', (new bebidas())->getBebidas());
+        $pObj = (new pratos());
+        $bObj = (new bebidas());
+        $this->smarty->assign('pratos', $pObj->getPratos());
+        $this->smarty->assign('bebidas', $bObj->getBebidas());
 
         $this->template->run();
         $this->smarty->display("pessoa/novo_match.tpl");
@@ -132,10 +138,11 @@ class pessoa extends controller
     {
         $this->template->setTitle("Minhas Sugestões");
         //$this->template->fetchJS('/files/js/pessoa/perfil.js');
-        $arrSugestao = (new SugestaoModel)->minhasSugestoes($_SESSION['user']['id']);
+        $sugModel = (new SugestaoModel);
+        $arrSugestao = $sugModel->minhasSugestoes($_SESSION['user']['id']);
         $sugestoes = array();
-        foreach ($arrSugestao as $k=>$sugestao) {
-            $arrImplode=[];
+        foreach ($arrSugestao as $k => $sugestao) {
+            $arrImplode = [];
             if ($sugestao['sug_prato'])
                 $arrImplode[] = $sugestao['sug_prato'];
 

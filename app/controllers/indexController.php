@@ -32,7 +32,8 @@ class index extends controller
     function cadastrar_pessoa()
     {
         if ($_POST) {
-            $usuId = (new PessoaModel())->inserir($_POST);
+            $obj = (new PessoaModel());
+            $usuId = $obj->inserir($_POST);
             if ($usuId) {
                 $_SESSION['user']['id'] = $usuId;
                 $_SESSION['user']['nome'] = $_POST['pes_nome'];
