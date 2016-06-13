@@ -41,15 +41,15 @@ class index extends controller
                 $_SESSION['user']['email'] = $_POST['pes_email'];
                 $_SESSION['user']['sexo'] = $_POST['pes_sexo'];
 
-                echo json_encode([
+                echo json_encode(array(
                     'type' => 'success'
-                ]);
+                ));
                 die;
             }
         }
-        echo json_encode([
+        echo json_encode(array(
             'type' => 'error'
-        ]);
+        ));
         die;
     }
 
@@ -67,9 +67,9 @@ class index extends controller
                 $_SESSION['user']['sobrenome'] = $pessoa[0]['pes_sobrenome'];
                 $_SESSION['user']['email'] = $pessoa[0]['pes_email'];
                 $_SESSION['user']['sexo'] = $pessoa[0]['pes_sexo'];
-                echo json_encode(['type' => 'success']);
+                echo json_encode(array('type' => 'success'));
             } else {
-                echo json_encode(['type' => 'error']);
+                echo json_encode(array('type' => 'error'));
             }
             die;
         }
@@ -86,12 +86,13 @@ class index extends controller
 
     private static function logado()
     {
-        if (isset($_SESSION['user'])){
+        if (isset($_SESSION['user'])) {
             Header("Location: /pessoa");
         }
     }
 
-    public function sobre(){
+    public function sobre()
+    {
         $this->template->setTitle("Sobre");
         //$this->template->fetchJS('files/js/pessoa/pessoa.js');
         $this->template->run();

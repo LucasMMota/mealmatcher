@@ -81,7 +81,7 @@ class pessoa extends controller
                 die;
             }
 
-            $arrData = [];
+            $arrData = array();
             if ($comida) {
                 $arrData['sug_prato'] = $comida;
             }
@@ -91,10 +91,10 @@ class pessoa extends controller
             $arrData['pes_id'] = $_SESSION['user']['id'];
             $sugestaoModel = new SugestaoModel;
             if ($sugestaoModel->novaSugestao($arrData)) {
-                echo json_encode(['type' => 'success']);
+                echo json_encode(array('type' => 'success'));
                 die;
             } else {
-                echo json_encode(['type' => 'error2']);
+                echo json_encode(array('type' => 'error2'));
                 die;
             }
         }
@@ -113,9 +113,9 @@ class pessoa extends controller
             $arrMatch['com_nota'] = $_POST['nota'];
 
             if ($this->pessoaModel->novoMatch($arrMatch))
-                echo json_encode(['type' => 'success']);
+                echo json_encode(array('type' => 'success'));
             else
-                echo json_encode(['type' => 'error']);
+                echo json_encode(array('type' => 'error'));
             die;
         }
 

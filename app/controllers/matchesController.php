@@ -35,10 +35,10 @@ class matches extends controller
     function curtir()
     {
         $com_id = $_POST['com_id'];
+        $obj = (new MatchesModel);
+        $obj->curtir($com_id);
 
-        (new MatchesModel)->curtir($com_id);
-
-        echo json_encode(['type' => 'success']);
+        echo json_encode(array('type' => 'success'));
         die;
     }
 }
