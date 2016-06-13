@@ -1,3 +1,3 @@
 <?php
-require 'app' . DIRECTORY_SEPARATOR . 'pessoa.php';
+require 'public_html' . DIRECTORY_SEPARATOR . 'index.php';
 ?>

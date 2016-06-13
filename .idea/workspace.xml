@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed2fc7a7-1f6e-4522-87bb-10acaf6b10b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/sugestaoModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/pessoa/minhas_sugestoes.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/files/js/pessoa/sugerir.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/templates/comuns/navegacao.tpl" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/templates/comentario.tpl" afterPath="$PROJECT_DIR$/app/views/templates/TE_comentario.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/templates/recomendacao.tpl" afterPath="$PROJECT_DIR$/app/views/templates/pessoa/sugerir.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/modelo_bd.mwb" afterPath="$PROJECT_DIR$/public_html/modelo_bd.mwb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/modelo_bd.mwb.bak" afterPath="$PROJECT_DIR$/public_html/modelo_bd.mwb.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/indexController.php" afterPath="$PROJECT_DIR$/app/controllers/indexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/matchesController.php" afterPath="$PROJECT_DIR$/app/controllers/matchesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pessoaController.php" afterPath="$PROJECT_DIR$/app/controllers/pessoaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/pessoaModel.php" afterPath="$PROJECT_DIR$/app/models/pessoaModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/defaultSite.php" afterPath="$PROJECT_DIR$/app/template/defaultSite.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/0f2995cc5772b58f4d230f4165b2ac28b42c953f.login.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/0f2995cc5772b58f4d230f4165b2ac28b42c953f.login.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20.head.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20.head.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/5e3b8294b844f0eb2a0e9601205b5d3acaba2d5d.404.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/5e3b8294b844f0eb2a0e9601205b5d3acaba2d5d.404.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/6fd7ee6ddc9aba772d2a10e21fe61a800243972b.sidebar_logado.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/6fd7ee6ddc9aba772d2a10e21fe61a800243972b.sidebar_logado.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/8de1bac3a40557cd9de7a752eb3989a4782f99af.footer.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/8de1bac3a40557cd9de7a752eb3989a4782f99af.footer.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/bd5fbadb4164b6026ef53648659a2a41b0fa84c7.index.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/bd5fbadb4164b6026ef53648659a2a41b0fa84c7.index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/c2d07a9a29c93f1c4cc5567db715da25bca262c7.index_logado.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/c2d07a9a29c93f1c4cc5567db715da25bca262c7.index_logado.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/c4462c7bc9c47e13d455215e3840bb0978aea466.top_matches.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/c4462c7bc9c47e13d455215e3840bb0978aea466.top_matches.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/c6b69ed7ef7dc959cff6290bc79d372b3d0e6a99.meus_matches.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/c6b69ed7ef7dc959cff6290bc79d372b3d0e6a99.meus_matches.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/dde712f343bdab94fbe81ed4ab4880da8a8b237d.navegacao.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/dde712f343bdab94fbe81ed4ab4880da8a8b237d.navegacao.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/404.tpl" afterPath="$PROJECT_DIR$/app/views/templates/404.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/comuns/head.tpl" afterPath="$PROJECT_DIR$/app/views/templates/comuns/head.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl" afterPath="$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/index.tpl" afterPath="$PROJECT_DIR$/app/views/templates/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/pessoa/index_logado.tpl" afterPath="$PROJECT_DIR$/app/views/templates/pessoa/index_logado.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/pessoa/login.tpl" afterPath="$PROJECT_DIR$/app/views/templates/pessoa/login.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/sobre.tpl" afterPath="$PROJECT_DIR$/app/views/templates/sobre.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/top_matches.tpl" afterPath="$PROJECT_DIR$/app/views/templates/top_matches.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/0f2995cc5772b58f4d230f4165b2ac28b42c953f.file.login.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/0f2995cc5772b58f4d230f4165b2ac28b42c953f.file.login.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20.file.head.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20.file.head.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/5e3b8294b844f0eb2a0e9601205b5d3acaba2d5d.file.404.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/5e3b8294b844f0eb2a0e9601205b5d3acaba2d5d.file.404.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/6fd7ee6ddc9aba772d2a10e21fe61a800243972b.file.sidebar_logado.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/6fd7ee6ddc9aba772d2a10e21fe61a800243972b.file.sidebar_logado.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/8de1bac3a40557cd9de7a752eb3989a4782f99af.file.footer.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/8de1bac3a40557cd9de7a752eb3989a4782f99af.file.footer.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/bd5fbadb4164b6026ef53648659a2a41b0fa84c7.file.index.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/bd5fbadb4164b6026ef53648659a2a41b0fa84c7.file.index.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/c2d07a9a29c93f1c4cc5567db715da25bca262c7.file.index_logado.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/c2d07a9a29c93f1c4cc5567db715da25bca262c7.file.index_logado.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/c4462c7bc9c47e13d455215e3840bb0978aea466.file.top_matches.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/c4462c7bc9c47e13d455215e3840bb0978aea466.file.top_matches.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/c6b69ed7ef7dc959cff6290bc79d372b3d0e6a99.file.meus_matches.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/c6b69ed7ef7dc959cff6290bc79d372b3d0e6a99.file.meus_matches.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/dde712f343bdab94fbe81ed4ab4880da8a8b237d.file.navegacao.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/dde712f343bdab94fbe81ed4ab4880da8a8b237d.file.navegacao.tpl.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/files/css/style.css" afterPath="$PROJECT_DIR$/public_html/files/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/files/js/matches/top_matches.js" afterPath="$PROJECT_DIR$/public_html/files/js/matches/top_matches.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="mealmatcher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar_logado.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sidebar_logado.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9086207">
+            <state vertical-scroll-proportion="-20.26923">
               <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
               <folding>
                 <element signature="e#1141#1236#0#HTML" expanded="true" />
@@ -125,6 +83,36 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-11.115385">
               <caret line="23" column="17" selection-start-line="18" selection-start-column="8" selection-end-line="23" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-29.423077">
+              <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08415841">
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -151,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/templates/Profile.tpl" />
         <option value="$PROJECT_DIR$/app/views/templates/comuns/footer.tpl" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/controllers/combinacaoController.php" />
@@ -201,6 +188,8 @@
         <option value="$PROJECT_DIR$/app/views/templates/pessoa/login.tpl" />
         <option value="$PROJECT_DIR$/app/views/templates/index.tpl" />
         <option value="$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -287,120 +276,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pessoa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matches" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mealmatcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -688,20 +563,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/template/adminSite.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -736,14 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.73077">
-          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1094,12 +947,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9086207">
+        <state vertical-scroll-proportion="-20.26923">
           <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
           <folding>
             <element signature="e#1141#1236#0#HTML" expanded="true" />
             <element signature="e#1696#1791#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.423077">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08415841">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
