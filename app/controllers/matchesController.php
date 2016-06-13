@@ -7,7 +7,7 @@ class matches extends controller
     {
         $this->template->setTitle("Top Matches");
         $this->template->fetchJS('/files/js/matches/top_matches.js');
-        $pessoaModel = new PessoaModel;
+        $pessoaModel = new PessoaModel();
         $matches = $pessoaModel->topMatches();
 
         if (isset($_SESSION['user']))
