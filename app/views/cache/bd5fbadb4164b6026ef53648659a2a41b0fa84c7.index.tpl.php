@@ -1,26 +1,27 @@
-<?php /*%%SmartyHeaderCode:73755758afa3294c97-93978613%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16401575e295a099908-26538856%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bd5fbadb4164b6026ef53648659a2a41b0fa84c7' => 
     array (
       0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\index.tpl',
-      1 => 1464892391,
+      1 => 1465788282,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '73755758afa3294c97-93978613',
+  'nocache_hash' => '16401575e295a099908-26538856',
   'variables' => 
   array (
     'head' => 0,
+    'sidebar_logado' => 0,
     'footer' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758afa32db780_36475910',
+  'unifunc' => 'content_575e295a251e21_92176633',
   'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758afa32db780_36475910')) {function content_5758afa32db780_36475910($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_575e295a251e21_92176633')) {function content_575e295a251e21_92176633($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -33,7 +34,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <!-- CSS  -->
             <link href="http://mealmatcher.localhost/files/css/materialize.min.css" rel="stylesheet" type="text/css"/>
             <link href="http://mealmatcher.localhost/files/css/style.css" rel="stylesheet" type="text/css"/>
-    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body background="/files/img/back.jpg">
@@ -61,9 +62,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <nav class="#ef5350 red lighten-1" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">MealMatcher</a>
+        <a id="logo-container" href="/" class="brand-logo">MealMatcher</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Sobre</a></li>
+            <li><a href="/pessoa/novo_match">Novo Match!</a></li>
+            <li><a href="/matches/">Top Matches</a></li>
+            <li><a href="/index/sobre">Sobre</a></li>
+            <li><a href="/index/login">Login</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="/pessoa/novo_match">Novo Match!</a></li>
+            <li><a href="/matches/">Top Matches</a></li>
+            <li><a href="/index/sobre">Sobre</a></li>
+            <li><a href="/index/login">Login</a></li>
         </ul>
 
 
@@ -75,6 +85,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     class="mdi-navigation-menu"></i></a>
     </div>
 </nav>
+
+
 
 
 <div class="container">
@@ -92,8 +104,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <br> <br>
                 <br>
 
-                <div class="fb-login-button" data-max-rows="1" data-size="large"
-                     data-show-faces="false" data-auto-logout-link="false"></div>
+                
                 <!--<a href="#" id="facebook-button" class="btn-large waves-effect waves-light blue">Entrar com Facebook</a>-->
                 <!--<div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
             </div>-->

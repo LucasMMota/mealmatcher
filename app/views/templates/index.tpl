@@ -22,11 +22,14 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<nav class="#ef5350 red lighten-1" role="navigation">
+{$sidebar_logado}
+{*<nav class="#ef5350 red lighten-1" role="navigation">
     <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">MealMatcher</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">Sobre</a></li>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="/pessoa/novo_match">Novo Match!</a></li>
+            <li><a href="/matches/">Top Matches</a></li>
+            <li><a href="/index/sobre">Sobre</a></li>
         </ul>
 
 
@@ -37,7 +40,7 @@
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i
                     class="mdi-navigation-menu"></i></a>
     </div>
-</nav>
+</nav>*}
 
 
 <div class="container">
@@ -55,8 +58,8 @@
                 <br> <br>
                 <br>
 
-                <div class="fb-login-button" data-max-rows="1" data-size="large"
-                     data-show-faces="false" data-auto-logout-link="false"></div>
+                {*<div class="fb-login-button" data-max-rows="1" data-size="large"
+                     data-show-faces="false" data-auto-logout-link="false"></div>*}
                 <!--<a href="#" id="facebook-button" class="btn-large waves-effect waves-light blue">Entrar com Facebook</a>-->
                 <!--<div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
             </div>-->

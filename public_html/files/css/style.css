@@ -15,18 +15,26 @@
     min-height: 95px;
 }
 
-.collapsible-header i{
+.collapsible-header i {
     width: 8px !important;
 }
 
-.comment-det{
+.comment-det {
     padding: 15px 15px !important;
 }
 
-.comment-comm{
-    padding: 2% 5% 7% 5%!important;
+.comment-comm {
+    padding: 2% 5% 7% 5% !important;
 }
 
-.collection-custom{
+.collection-custom {
     margin: -0.5rem 5% 1rem 5% !important;
+}
+
+.btn-curtir {
+    color: rgba(96, 125, 139, 0.6);
+}
+
+span.curtiu > i, .curtiu {
+    color: #625d8c !important;
 }

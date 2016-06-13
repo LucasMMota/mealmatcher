@@ -60,4 +60,12 @@ class PessoaModel extends model
         return $this->read($tables, array('comb.*, beb.*, pra.*, pes.*, count(ava.ava_curtir) as votos'), null, "comb.com_id", 10, null, 'votos DESC, data Desc');
     }
 
+    public function verificaCurtir($usu_id, $com_id)
+    {
+        $tables = "cad_avaliacao as ava";
+        $where = "ava.pes_id = '$usu_id' AND ava.com_id = '$com_id'";
+
+        return $this->read($tables, array('*'), $where);
+    }
+
 }

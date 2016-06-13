@@ -19,7 +19,16 @@
                         <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
                     {/for}
                     {if $logado}
-                        <span onclick="joia({$match['com_id']})">Joia</span>
+                        <span style="z-index: 9999;" rel="{$match['com_id']}"
+                              class="btn-curtir-span {if $match['curtiu'] === '1' || $match['curtiu'] === '0' } curtiu{/if}"
+                              data-tooltip="{if $match['curtiu'] === '1'}Curtiu{elseif $match['curtiu'] === '0'}Não Curtiu{else}Curtiu{/if}">
+                            <i class="material-icons dp48 btn-curtir{if $match['curtiu'] === '1' || $match['curtiu'] === '0' } curtiu{/if}">
+                                {if $match['curtiu']==='1' || $match['curtiu'] === false}
+                                    thumb_up
+                                {else}
+                                    thumb_down
+                                {/if}
+                            </i></span>
                     {/if}
                 </div>
             </div>
@@ -27,7 +36,7 @@
                 <p class="comment-det">{$match['pra_nome']} & {$match['beb_nome']}</p>
 
                 <p class="comment-comm">{$match['com_descricao']|default:""}<span> - Por: {$match['pes_nome']}
-                        em {$match['data']}</span></p>
+                        em {$match['data']|date_format:"%A %e de %B de %Y às %H:%M"}</span></p>
             </div>
         </li>
         {foreachelse}

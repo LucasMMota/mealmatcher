@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:69355758ae804b0b28-18331103%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:19204575e20392e2902-26625431%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '69355758ae804b0b28-18331103',
+  'nocache_hash' => '19204575e20392e2902-26625431',
   'variables' => 
   array (
     'head' => 0,
@@ -20,10 +20,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758ae807fe4f5_90476374',
+  'unifunc' => 'content_575e2039a4a1c2_61241441',
   'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758ae807fe4f5_90476374')) {function content_5758ae807fe4f5_90476374($_smarty_tpl) {?>﻿<!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_575e2039a4a1c2_61241441')) {function content_575e2039a4a1c2_61241441($_smarty_tpl) {?>﻿<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -36,14 +36,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <!-- CSS  -->
             <link href="http://mealmatcher.localhost/files/css/materialize.min.css" rel="stylesheet" type="text/css"/>
             <link href="http://mealmatcher.localhost/files/css/style.css" rel="stylesheet" type="text/css"/>
-    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body style="background-color: #efebe9">
 
 <nav class="#ef5350 red lighten-1" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">Meu Perfil</a>
+        <a id="logo-container" href="/" class="brand-logo">MealMatcher</a>
         <ul class="right hide-on-med-and-down">
 
             <li>
@@ -66,6 +66,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <li><a href="/pessoa/meus_matches">Meus Matches</a></li>
             <li><a href="/matches/">Top Matches</a></li>
             <li><a href="/pessoa/sugerir">Sugerir Pratos/Bebidas</a></li>
+            <li><a href="/pessoa/minhas_sugestoes">Minhas Sugestões</a></li>
             <li><a href="/index/logout">Sair</a></li>
             <li><a href="/index/sobre">Sobre</a></li>
         </ul>

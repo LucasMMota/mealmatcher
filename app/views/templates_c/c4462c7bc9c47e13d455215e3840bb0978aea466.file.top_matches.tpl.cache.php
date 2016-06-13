@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-06-08 21:54:59
+<?php /* Smarty version Smarty-3.1.19, created on 2016-06-13 00:27:46
          compiled from "C:\wamp\www\mealmatcher\app\views\templates\top_matches.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7925758be63534e62-23839628%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13478575e2832ce8760-79586725%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c4462c7bc9c47e13d455215e3840bb0978aea466' => 
     array (
       0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\top_matches.tpl',
-      1 => 1465433691,
+      1 => 1465786867,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7925758be63534e62-23839628',
+  'nocache_hash' => '13478575e2832ce8760-79586725',
   'function' => 
   array (
   ),
@@ -26,9 +26,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758be635bf5e1_73758673',
+  'unifunc' => 'content_575e283318e276_77185190',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758be635bf5e1_73758673')) {function content_5758be635bf5e1_73758673($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_truncate')) include 'C:\\wamp\\www\\mealmatcher\\system\\libs\\smarty\\plugins\\modifier.truncate.php';
+<?php if ($_valid && !is_callable('content_575e283318e276_77185190')) {function content_575e283318e276_77185190($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_truncate')) include 'C:\\wamp\\www\\mealmatcher\\system\\libs\\smarty\\plugins\\modifier.truncate.php';
+if (!is_callable('smarty_modifier_date_format')) include 'C:\\wamp\\www\\mealmatcher\\system\\libs\\smarty\\plugins\\modifier.date_format.php';
 ?>﻿<?php echo $_smarty_tpl->tpl_vars['head']->value;?>
 
 <body style="background-color: #efebe9">
@@ -61,8 +62,17 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
                         <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
                     <?php }} ?>
                     <?php if ($_smarty_tpl->tpl_vars['logado']->value) {?>
-                        <span onclick="joia(<?php echo $_smarty_tpl->tpl_vars['match']->value['com_id'];?>
-)">Joia</span>
+                        <span style="z-index: 9999;" rel="<?php echo $_smarty_tpl->tpl_vars['match']->value['com_id'];?>
+"
+                              class="btn-curtir-span <?php if ($_smarty_tpl->tpl_vars['match']->value['curtiu']==='1'||$_smarty_tpl->tpl_vars['match']->value['curtiu']==='0') {?> curtiu<?php }?>"
+                              data-tooltip="<?php if ($_smarty_tpl->tpl_vars['match']->value['curtiu']==='1') {?>Curtiu<?php } elseif ($_smarty_tpl->tpl_vars['match']->value['curtiu']==='0') {?>Não Curtiu<?php } else { ?>Curtiu<?php }?>">
+                            <i class="material-icons dp48 btn-curtir<?php if ($_smarty_tpl->tpl_vars['match']->value['curtiu']==='1'||$_smarty_tpl->tpl_vars['match']->value['curtiu']==='0') {?> curtiu<?php }?>">
+                                <?php if ($_smarty_tpl->tpl_vars['match']->value['curtiu']==='1'||$_smarty_tpl->tpl_vars['match']->value['curtiu']===false) {?>
+                                    thumb_up
+                                <?php } else { ?>
+                                    thumb_down
+                                <?php }?>
+                            </i></span>
                     <?php }?>
                 </div>
             </div>
@@ -74,7 +84,7 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
                 <p class="comment-comm"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['match']->value['com_descricao'])===null||$tmp==='' ? '' : $tmp);?>
 <span> - Por: <?php echo $_smarty_tpl->tpl_vars['match']->value['pes_nome'];?>
 
-                        em <?php echo $_smarty_tpl->tpl_vars['match']->value['data'];?>
+                        em <?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['match']->value['data'],"%A %e de %B de %Y às %H:%M");?>
 </span></p>
             </div>
         </li>

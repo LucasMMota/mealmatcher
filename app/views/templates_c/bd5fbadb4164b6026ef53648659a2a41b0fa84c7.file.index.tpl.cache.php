@@ -1,30 +1,31 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-06-08 20:52:03
+<?php /* Smarty version Smarty-3.1.19, created on 2016-06-13 00:32:42
          compiled from "C:\wamp\www\mealmatcher\app\views\templates\index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:73755758afa3294c97-93978613%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16401575e295a099908-26538856%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bd5fbadb4164b6026ef53648659a2a41b0fa84c7' => 
     array (
       0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\index.tpl',
-      1 => 1464892391,
+      1 => 1465788282,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '73755758afa3294c97-93978613',
+  'nocache_hash' => '16401575e295a099908-26538856',
   'function' => 
   array (
   ),
   'variables' => 
   array (
     'head' => 0,
+    'sidebar_logado' => 0,
     'footer' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758afa32a4ab7_43294222',
+  'unifunc' => 'content_575e295a109c10_91941574',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758afa32a4ab7_43294222')) {function content_5758afa32a4ab7_43294222($_smarty_tpl) {?><?php echo $_smarty_tpl->tpl_vars['head']->value;?>
+<?php if ($_valid && !is_callable('content_575e295a109c10_91941574')) {function content_575e295a109c10_91941574($_smarty_tpl) {?><?php echo $_smarty_tpl->tpl_vars['head']->value;?>
 
 <body background="/files/img/back.jpg">
 <div id="fb-root"></div>
@@ -49,22 +50,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<nav class="#ef5350 red lighten-1" role="navigation">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">MealMatcher</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">Sobre</a></li>
-        </ul>
+<?php echo $_smarty_tpl->tpl_vars['sidebar_logado']->value;?>
 
 
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="sobre.php">Sobre</a></li>
-        </ul>
-
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i
-                    class="mdi-navigation-menu"></i></a>
-    </div>
-</nav>
 
 
 <div class="container">
@@ -82,8 +70,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <br> <br>
                 <br>
 
-                <div class="fb-login-button" data-max-rows="1" data-size="large"
-                     data-show-faces="false" data-auto-logout-link="false"></div>
+                
                 <!--<a href="#" id="facebook-button" class="btn-large waves-effect waves-light blue">Entrar com Facebook</a>-->
                 <!--<div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
             </div>-->

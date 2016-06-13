@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-06-08 20:52:03
+<?php /* Smarty version Smarty-3.1.19, created on 2016-06-13 00:31:59
          compiled from "C:\wamp\www\mealmatcher\app\views\templates\pessoa\index_logado.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:113365758afa35c8049-00089992%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3931575e292f580009-77774179%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c2d07a9a29c93f1c4cc5567db715da25bca262c7' => 
     array (
       0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\pessoa\\index_logado.tpl',
-      1 => 1464895360,
+      1 => 1465786543,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '113365758afa35c8049-00089992',
+  'nocache_hash' => '3931575e292f580009-77774179',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758afa35faac5_15964575',
+  'unifunc' => 'content_575e292f746392_88393624',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758afa35faac5_15964575')) {function content_5758afa35faac5_15964575($_smarty_tpl) {?>﻿<?php echo $_smarty_tpl->tpl_vars['head']->value;?>
+<?php if ($_valid && !is_callable('content_575e292f746392_88393624')) {function content_575e292f746392_88393624($_smarty_tpl) {?>﻿<?php echo $_smarty_tpl->tpl_vars['head']->value;?>
 
 <body style="background-color: #efebe9">
 
@@ -35,28 +35,28 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div style="z-index: 0;" class="slider">
     <ul class="slides">
-        <li><a href="Matches.php"> <img src="/files/img/lorem3.jpg"> <!-- random image -->
+        <li><a href="/pessoa/meus_matches"> <img src="/files/img/lorem3.jpg"> <!-- random image -->
                 <div class="caption center-align">
                     <h3>Meus Matches</h3>
-                    <h5 class="light grey-text text-lighten-3">Veja aqui suas ultimas
+                    <h5 class="light grey-text text-lighten-3">Clique aqui e Veja aqui suas ultimas
                         combinações.</h5>
                 </div>
             </a></li>
-        <li><a href="Suggest.php"> <img src="/files/img/lorem4.jpg"> <!-- random image -->
+        <li><a href="/pessoa/sugerir"> <img src="/files/img/lorem4.jpg"> <!-- random image -->
                 <div class="caption left-align">
                     <h3>Sugerir combinações</h3>
                     <h5 class="light grey-text text-lighten-3">Compartilhe suas
                         experiências (boas ou ruins).</h5>
                 </div>
             </a></li>
-        <li><a href="Combinations.php"> <img src="/files/img/lorem5.jpg"> <!-- random image -->
+        <li><a href="/matches"> <img src="/files/img/lorem5.jpg"> <!-- random image -->
                 <div class="caption right-align">
                     <h3>Pesquisar</h3>
                     <h5 class="light grey-text text-lighten-3">Veja as sugestões da
                         comunidade</h5>
                 </div>
             </a></li>
-        <li><a href="Top Matches.php"> <img src="/files/img/lorem6.jpg"> <!-- random image -->
+        <li><a href="/matches"> <img src="/files/img/lorem6.jpg"> <!-- random image -->
                 <div class="caption center-align">
                     <h3>Melhores escolhas</h3>
                     <h5 class="light grey-text text-lighten-3">Matches que todo mundo

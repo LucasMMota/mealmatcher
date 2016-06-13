@@ -8,9 +8,6 @@ class defaultSite extends template
         $head = $this->smarty->fetch("comuns/head.tpl");
         $this->smarty->assign('head', $head);
 
-        $navegacao = $this->smarty->fetch("comuns/navegacao.tpl");
-        $this->smarty->assign('navegacao', $navegacao);
-
         $sb = $this->smarty->fetch("comuns/sidebar_logado.tpl");
         $this->smarty->assign('sidebar_logado', $sb);
 

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed2fc7a7-1f6e-4522-87bb-10acaf6b10b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/MatchesModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/files/js/matches/top_matches.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/sugestaoModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/pessoa/minhas_sugestoes.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/files/js/pessoa/sugerir.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/templates/comuns/navegacao.tpl" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/templates/comentario.tpl" afterPath="$PROJECT_DIR$/app/views/templates/TE_comentario.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/templates/recomendacao.tpl" afterPath="$PROJECT_DIR$/app/views/templates/pessoa/sugerir.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/modelo_bd.mwb" afterPath="$PROJECT_DIR$/public_html/modelo_bd.mwb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/modelo_bd.mwb.bak" afterPath="$PROJECT_DIR$/public_html/modelo_bd.mwb.bak" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -11,7 +15,37 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/matchesController.php" afterPath="$PROJECT_DIR$/app/controllers/matchesController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pessoaController.php" afterPath="$PROJECT_DIR$/app/controllers/pessoaController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/pessoaModel.php" afterPath="$PROJECT_DIR$/app/models/pessoaModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/defaultSite.php" afterPath="$PROJECT_DIR$/app/template/defaultSite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/0f2995cc5772b58f4d230f4165b2ac28b42c953f.login.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/0f2995cc5772b58f4d230f4165b2ac28b42c953f.login.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20.head.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20.head.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/5e3b8294b844f0eb2a0e9601205b5d3acaba2d5d.404.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/5e3b8294b844f0eb2a0e9601205b5d3acaba2d5d.404.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/6fd7ee6ddc9aba772d2a10e21fe61a800243972b.sidebar_logado.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/6fd7ee6ddc9aba772d2a10e21fe61a800243972b.sidebar_logado.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/8de1bac3a40557cd9de7a752eb3989a4782f99af.footer.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/8de1bac3a40557cd9de7a752eb3989a4782f99af.footer.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/bd5fbadb4164b6026ef53648659a2a41b0fa84c7.index.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/bd5fbadb4164b6026ef53648659a2a41b0fa84c7.index.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/c2d07a9a29c93f1c4cc5567db715da25bca262c7.index_logado.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/c2d07a9a29c93f1c4cc5567db715da25bca262c7.index_logado.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/c4462c7bc9c47e13d455215e3840bb0978aea466.top_matches.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/c4462c7bc9c47e13d455215e3840bb0978aea466.top_matches.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/c6b69ed7ef7dc959cff6290bc79d372b3d0e6a99.meus_matches.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/c6b69ed7ef7dc959cff6290bc79d372b3d0e6a99.meus_matches.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cache/dde712f343bdab94fbe81ed4ab4880da8a8b237d.navegacao.tpl.php" afterPath="$PROJECT_DIR$/app/views/cache/dde712f343bdab94fbe81ed4ab4880da8a8b237d.navegacao.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/404.tpl" afterPath="$PROJECT_DIR$/app/views/templates/404.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/comuns/head.tpl" afterPath="$PROJECT_DIR$/app/views/templates/comuns/head.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl" afterPath="$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/index.tpl" afterPath="$PROJECT_DIR$/app/views/templates/index.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/pessoa/index_logado.tpl" afterPath="$PROJECT_DIR$/app/views/templates/pessoa/index_logado.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/pessoa/login.tpl" afterPath="$PROJECT_DIR$/app/views/templates/pessoa/login.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/sobre.tpl" afterPath="$PROJECT_DIR$/app/views/templates/sobre.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/top_matches.tpl" afterPath="$PROJECT_DIR$/app/views/templates/top_matches.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/0f2995cc5772b58f4d230f4165b2ac28b42c953f.file.login.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/0f2995cc5772b58f4d230f4165b2ac28b42c953f.file.login.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20.file.head.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20.file.head.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/5e3b8294b844f0eb2a0e9601205b5d3acaba2d5d.file.404.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/5e3b8294b844f0eb2a0e9601205b5d3acaba2d5d.file.404.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/6fd7ee6ddc9aba772d2a10e21fe61a800243972b.file.sidebar_logado.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/6fd7ee6ddc9aba772d2a10e21fe61a800243972b.file.sidebar_logado.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/8de1bac3a40557cd9de7a752eb3989a4782f99af.file.footer.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/8de1bac3a40557cd9de7a752eb3989a4782f99af.file.footer.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/bd5fbadb4164b6026ef53648659a2a41b0fa84c7.file.index.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/bd5fbadb4164b6026ef53648659a2a41b0fa84c7.file.index.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/c2d07a9a29c93f1c4cc5567db715da25bca262c7.file.index_logado.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/c2d07a9a29c93f1c4cc5567db715da25bca262c7.file.index_logado.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/c4462c7bc9c47e13d455215e3840bb0978aea466.file.top_matches.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/c4462c7bc9c47e13d455215e3840bb0978aea466.file.top_matches.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/c6b69ed7ef7dc959cff6290bc79d372b3d0e6a99.file.meus_matches.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/c6b69ed7ef7dc959cff6290bc79d372b3d0e6a99.file.meus_matches.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates_c/dde712f343bdab94fbe81ed4ab4880da8a8b237d.file.navegacao.tpl.cache.php" afterPath="$PROJECT_DIR$/app/views/templates_c/dde712f343bdab94fbe81ed4ab4880da8a8b237d.file.navegacao.tpl.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/files/css/style.css" afterPath="$PROJECT_DIR$/public_html/files/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/files/js/matches/top_matches.js" afterPath="$PROJECT_DIR$/public_html/files/js/matches/top_matches.js" />
     </list>
     <ignored path="mealmatcher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,76 +67,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="matchesController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/matchesController.php">
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43965518">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top_matches.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/files/js/matches/top_matches.js">
+      <file leaf-file-name="login.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/login.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="novo_match.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/files/js/pessoa/novo_match.js">
+      <file leaf-file-name="pessoaController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pessoaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="90" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="90" />
+            <state vertical-scroll-proportion="-63.5">
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minhas_sugestoes.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/minhas_sugestoes.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar_logado.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9086207">
+              <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
               <folding>
-                <element signature="n#!!block;n#sleep#0" expanded="false" />
-                <element signature="e#1196#1238#0" expanded="false" />
+                <element signature="e#1141#1236#0#HTML" expanded="true" />
+                <element signature="e#1696#1791#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top_matches.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/top_matches.tpl">
+      <file leaf-file-name="TE_comentario.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/TE_comentario.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6153846">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="e#279#309#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/files/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.73077">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meus_matches.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/meus_matches.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pessoaModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/pessoaModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.192307">
-              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="23" column="17" selection-start-line="18" selection-start-column="8" selection-end-line="23" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -130,8 +152,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/views/templates/Profile.tpl" />
-        <option value="$PROJECT_DIR$/app/template/template.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/comuns/head.tpl" />
         <option value="$PROJECT_DIR$/app/views/templates/comuns/footer.tpl" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/controllers/combinacaoController.php" />
@@ -147,32 +167,40 @@
         <option value="$PROJECT_DIR$/app/views/templates/pessoa/index.tpl" />
         <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$PROJECT_DIR$/system/system.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/index.tpl" />
         <option value="$PROJECT_DIR$/app/views/templates/pessoa/cadastro.tpl" />
-        <option value="$PROJECT_DIR$/app/views/templates/pessoa/login.tpl" />
         <option value="$PROJECT_DIR$/app/views/templates/comuns/navegacao.tpl" />
-        <option value="$PROJECT_DIR$/app/template/defaultSite.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/pessoa/index_logado.tpl" />
         <option value="$PROJECT_DIR$/public_html/files/js/pessoa/novo_match.js" />
         <option value="$PROJECT_DIR$/app/models/bebidasModel.php" />
         <option value="$PROJECT_DIR$/app/models/pratosModel.php" />
         <option value="$PROJECT_DIR$/app/views/templates/pessoa/novo_match.tpl" />
         <option value="$PROJECT_DIR$/app/controllers/pratosController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/pagina404Controller.php" />
         <option value="$PROJECT_DIR$/app/controllers/bebidasController.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl" />
         <option value="$PROJECT_DIR$/app/controllers/KenjiAndPam.php" />
         <option value="$PROJECT_DIR$/app/views/templates/pessoa/meus_matches.tpl" />
         <option value="$PROJECT_DIR$/app/controllers/matches.php" />
-        <option value="$PROJECT_DIR$/public_html/files/css/style.css" />
         <option value="$PROJECT_DIR$/system/model.php" />
-        <option value="$PROJECT_DIR$/app/controllers/pessoaController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/indexController.php" />
-        <option value="$PROJECT_DIR$/public_html/files/js/matches/top_matches.js" />
         <option value="$PROJECT_DIR$/app/models/MatchesModel.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/top_matches.tpl" />
         <option value="$PROJECT_DIR$/app/models/pessoaModel.php" />
+        <option value="$PROJECT_DIR$/app/template/template.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/comuns/head.tpl" />
         <option value="$PROJECT_DIR$/app/controllers/matchesController.php" />
+        <option value="$PROJECT_DIR$/public_html/files/css/style.css" />
+        <option value="$PROJECT_DIR$/public_html/files/js/matches/top_matches.js" />
+        <option value="$PROJECT_DIR$/app/views/templates/pessoa/sugerir.tpl" />
+        <option value="$PROJECT_DIR$/app/template/defaultSite.php" />
+        <option value="$PROJECT_DIR$/app/models/sugestaoModel.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/404.tpl" />
+        <option value="$PROJECT_DIR$/app/controllers/pagina404Controller.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/pessoa/index_logado.tpl" />
+        <option value="$PROJECT_DIR$/app/views/templates/top_matches.tpl" />
+        <option value="$PROJECT_DIR$/public_html/files/js/pessoa/sugerir.js" />
+        <option value="$PROJECT_DIR$/app/controllers/pessoaController.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/pessoa/minhas_sugestoes.tpl" />
+        <option value="$PROJECT_DIR$/app/views/templates/sobre.tpl" />
+        <option value="$PROJECT_DIR$/app/controllers/indexController.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/pessoa/login.tpl" />
+        <option value="$PROJECT_DIR$/app/views/templates/index.tpl" />
+        <option value="$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl" />
       </list>
     </option>
   </component>
@@ -547,16 +575,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\mealmatcher\app\views\templates" />
-      <recent name="C:\wamp\www\mealmatcher\app\views\templates\pessoa" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\mealmatcher\app\models" />
       <recent name="C:\wamp\www\mealmatcher\app\views\templates\pessoa" />
+      <recent name="C:\wamp\www\mealmatcher\app\models" />
+      <recent name="C:\wamp\www\mealmatcher\public_html\files\js\pessoa" />
       <recent name="C:\wamp\www\mealmatcher\app\controllers" />
       <recent name="C:\wamp\www\mealmatcher\public_html\files\img" />
-      <recent name="C:\wamp\www\mealmatcher\public_html\files" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\mealmatcher\app\views\templates\pessoa" />
+      <recent name="C:\wamp\www\mealmatcher\app\views\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -623,6 +651,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -634,7 +663,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -660,39 +688,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../OLDmealmatcher/mealmatcher/Cadastre.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9404553">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/files/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/files/img/back.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -725,13 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34827587">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -748,6 +736,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -755,65 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.73077">
           <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9615383">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/login.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.230769">
-          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/cadastro.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-53.615383">
-          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/defaultSite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08793104">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/comentario.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0672414">
-          <caret line="194" column="9" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/recomendacao.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.513793">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/comuns/head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/files/js/materialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34887737">
-          <caret line="1677" column="1" selection-start-line="1677" selection-start-column="1" selection-end-line="1677" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -846,6 +776,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.230769">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -854,13 +785,6 @@
         <state vertical-scroll-proportion="-0.6181818">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pagina404Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -929,83 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/comuns/navegacao.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029310346">
-          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.846154">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/index_logado.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.115385">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/files/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.73077">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/indexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41034484">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/meus_matches.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pessoaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61551726">
-          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/files/js/pessoa/novo_match.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="90" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="90" />
-          <folding>
-            <element signature="n#!!block;n#sleep#0" expanded="false" />
-            <element signature="e#1196#1238#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/top_matches.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6153846">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="e#279#309#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34827587">
@@ -1030,25 +877,229 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/pessoaModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.192307">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+        <state vertical-scroll-proportion="-19.038462">
+          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/files/js/materialize.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029360967">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/files/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.692308">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/files/js/pessoa/novo_match.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7013201">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="90" />
+          <folding>
+            <element signature="n#!!block;n#sleep#0" expanded="false" />
+            <element signature="e#1196#1238#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/files/js/matches/top_matches.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.5610561">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54137933">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/files/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34887737">
+          <caret line="1677" column="1" selection-start-line="1677" selection-start-column="1" selection-end-line="1677" selection-end-column="1" />
+          <folding>
+            <marker date="1464825630277" expanded="true" signature="139726:139803" placeholder="..." />
+            <marker date="1464825630277" expanded="true" signature="192468:192497" placeholder="..." />
+            <marker date="1464825630277" expanded="true" signature="192758:192768" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/sugerir.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.735849">
+          <caret line="21" column="106" selection-start-line="21" selection-start-column="106" selection-end-line="21" selection-end-column="120" />
+          <folding>
+            <element signature="e#489#508#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/defaultSite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/sugestaoModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/404.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/comuns/head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="90" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pagina404Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/cadastro.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9615383">
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/meus_matches.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="12" column="44" selection-start-line="11" selection-start-column="7" selection-end-line="12" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/matchesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43965518">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state vertical-scroll-proportion="-3.6923077">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/top_matches.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23448277">
+          <caret line="23" column="93" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/sobre.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pessoaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-63.5">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/indexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.538462">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/minhas_sugestoes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/login.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/pessoa/index_logado.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29310346">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/files/js/pessoa/sugerir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33663365">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/TE_comentario.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="23" column="17" selection-start-line="18" selection-start-column="8" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/comuns/sidebar_logado.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9086207">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding>
+            <element signature="e#1141#1236#0#HTML" expanded="true" />
+            <element signature="e#1696#1791#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

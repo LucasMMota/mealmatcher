@@ -1,26 +1,27 @@
-<?php /*%%SmartyHeaderCode:41115758af3576dda2-79273871%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9620575e283977a752-86020812%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0f2995cc5772b58f4d230f4165b2ac28b42c953f' => 
     array (
       0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\pessoa\\login.tpl',
-      1 => 1464893847,
+      1 => 1465788089,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '41115758af3576dda2-79273871',
+  'nocache_hash' => '9620575e283977a752-86020812',
   'variables' => 
   array (
     'head' => 0,
+    'sidebar_logado' => 0,
     'footer' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758af357b7bc0_54040874',
+  'unifunc' => 'content_575e2839976360_89330308',
   'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758af357b7bc0_54040874')) {function content_5758af357b7bc0_54040874($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_575e2839976360_89330308')) {function content_575e2839976360_89330308($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -33,17 +34,38 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <!-- CSS  -->
             <link href="http://mealmatcher.localhost/files/css/materialize.min.css" rel="stylesheet" type="text/css"/>
             <link href="http://mealmatcher.localhost/files/css/style.css" rel="stylesheet" type="text/css"/>
-    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body style="background-color: #efebe9">
 
 <nav class="#ef5350 red lighten-1" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Login</a>
+        <a id="logo-container" href="/" class="brand-logo">MealMatcher</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="/pessoa/novo_match">Novo Match!</a></li>
+            <li><a href="/matches/">Top Matches</a></li>
+            <li><a href="/index/sobre">Sobre</a></li>
+            <li><a href="/index/login">Login</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="/pessoa/novo_match">Novo Match!</a></li>
+            <li><a href="/matches/">Top Matches</a></li>
+            <li><a href="/index/sobre">Sobre</a></li>
+            <li><a href="/index/login">Login</a></li>
+        </ul>
 
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="sobre.php">Sobre</a></li>
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i
+                    class="mdi-navigation-menu"></i></a>
     </div>
 </nav>
+
+
 
 
 <div class="container">

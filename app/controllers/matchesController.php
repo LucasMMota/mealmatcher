@@ -7,21 +7,26 @@ class matches extends controller
     {
         $this->template->setTitle("Top Matches");
         $this->template->fetchJS('/files/js/matches/top_matches.js');
-        $pessoaModel = (new PessoaModel())->topMatches();
+        $pessoaModel = new PessoaModel;
         $matches = $pessoaModel->topMatches();
 
-        $this->smarty->assign('matches', $matches);
+        if (isset($_SESSION['user']))
+            foreach ($matches as $k => $match) {
+                $arrAva = $pessoaModel->verificaCurtir($_SESSION['user']['id'], $match['com_id']);
 
-        foreach ($matches as $match) {
-        $pessoaModel->;
-        }
+                if ($arrAva)
+                    $matches[$k]['curtiu'] = $arrAva[0]['ava_curtir'];
+                else
+                    $matches[$k]['curtiu'] = false;
+                //var_dump($matches[$k]);die;
+            }
 
-        //TODO mudar para colappse
         //TODO pessoa sugerir
         //TODO criar all matches
         //TODO sobre
 
 
+        $this->smarty->assign('matches', $matches);
         $this->smarty->assign('logado', isset($_SESSION['user']['id']));
         $this->template->run();
         $this->smarty->display("top_matches.tpl");

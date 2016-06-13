@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-06-08 21:57:45
+<?php /* Smarty version Smarty-3.1.19, created on 2016-06-13 00:32:45
          compiled from "C:\wamp\www\mealmatcher\app\views\templates\comuns\head.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:181465758bf094fa1f3-13483409%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9590575e295d753674-99424588%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '3aed5e269d63ae882e20a3f6fe0ea17e1d5aea20' => 
     array (
       0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\comuns\\head.tpl',
-      1 => 1463615947,
+      1 => 1465780294,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '181465758bf094fa1f3-13483409',
+  'nocache_hash' => '9590575e295d753674-99424588',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758bf09539904_14567647',
+  'unifunc' => 'content_575e295d852674_04989959',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758bf09539904_14567647')) {function content_5758bf09539904_14567647($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_575e295d852674_04989959')) {function content_575e295d852674_04989959($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -63,6 +63,6 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
         <link href="<?php echo $_smarty_tpl->tpl_vars['css']->value[$_smarty_tpl->getVariable('smarty')->value['section']['i']['pessoa']];?>
 " rel="stylesheet" type="text/css"/>
     <?php endfor; endif; ?>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <?php }} ?>

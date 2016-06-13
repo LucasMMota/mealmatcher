@@ -5,28 +5,28 @@
 
 <div style="z-index: 0;" class="slider">
     <ul class="slides">
-        <li><a href="Matches.php"> <img src="/files/img/lorem3.jpg"> <!-- random image -->
+        <li><a href="/pessoa/meus_matches"> <img src="/files/img/lorem3.jpg"> <!-- random image -->
                 <div class="caption center-align">
                     <h3>Meus Matches</h3>
-                    <h5 class="light grey-text text-lighten-3">Veja aqui suas ultimas
+                    <h5 class="light grey-text text-lighten-3">Clique aqui e Veja aqui suas ultimas
                         combinações.</h5>
                 </div>
             </a></li>
-        <li><a href="Suggest.php"> <img src="/files/img/lorem4.jpg"> <!-- random image -->
+        <li><a href="/pessoa/sugerir"> <img src="/files/img/lorem4.jpg"> <!-- random image -->
                 <div class="caption left-align">
                     <h3>Sugerir combinações</h3>
                     <h5 class="light grey-text text-lighten-3">Compartilhe suas
                         experiências (boas ou ruins).</h5>
                 </div>
             </a></li>
-        <li><a href="Combinations.php"> <img src="/files/img/lorem5.jpg"> <!-- random image -->
+        <li><a href="/matches"> <img src="/files/img/lorem5.jpg"> <!-- random image -->
                 <div class="caption right-align">
                     <h3>Pesquisar</h3>
                     <h5 class="light grey-text text-lighten-3">Veja as sugestões da
                         comunidade</h5>
                 </div>
             </a></li>
-        <li><a href="Top Matches.php"> <img src="/files/img/lorem6.jpg"> <!-- random image -->
+        <li><a href="/matches"> <img src="/files/img/lorem6.jpg"> <!-- random image -->
                 <div class="caption center-align">
                     <h3>Melhores escolhas</h3>
                     <h5 class="light grey-text text-lighten-3">Matches que todo mundo

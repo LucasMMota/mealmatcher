@@ -1,15 +1,15 @@
-<?php /*%%SmartyHeaderCode:7925758be63534e62-23839628%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13478575e2832ce8760-79586725%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c4462c7bc9c47e13d455215e3840bb0978aea466' => 
     array (
       0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\top_matches.tpl',
-      1 => 1465433691,
+      1 => 1465786867,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7925758be63534e62-23839628',
+  'nocache_hash' => '13478575e2832ce8760-79586725',
   'variables' => 
   array (
     'head' => 0,
@@ -21,10 +21,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758be6363fc02_60139086',
+  'unifunc' => 'content_575e28334fa9d0_64619840',
   'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758be6363fc02_60139086')) {function content_5758be6363fc02_60139086($_smarty_tpl) {?>﻿<!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_575e28334fa9d0_64619840')) {function content_575e28334fa9d0_64619840($_smarty_tpl) {?>﻿<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -37,45 +37,37 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <!-- CSS  -->
             <link href="http://mealmatcher.localhost/files/css/materialize.min.css" rel="stylesheet" type="text/css"/>
             <link href="http://mealmatcher.localhost/files/css/style.css" rel="stylesheet" type="text/css"/>
-    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body style="background-color: #efebe9">
 
 <nav class="#ef5350 red lighten-1" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">Meu Perfil</a>
+        <a id="logo-container" href="/" class="brand-logo">MealMatcher</a>
         <ul class="right hide-on-med-and-down">
-
-            <li>
-                <a href="/pessoa/perfil">
-                    Meu Perfil
-                </a>
-            </li>
-            <li>
-                <a href="/matches">
-                    Matches
-                </a>
-            </li>
-            <li><a href="sobre.php">Sobre</a></li>
-            <li><a href="sair.php">Sair</a></li>
+            <li><a href="/pessoa/novo_match">Novo Match!</a></li>
+            <li><a href="/matches/">Top Matches</a></li>
+            <li><a href="/index/sobre">Sobre</a></li>
+            <li><a href="/index/login">Login</a></li>
         </ul>
-
         <ul id="nav-mobile" class="side-nav">
             <li><a href="/pessoa/novo_match">Novo Match!</a></li>
-            <li><a href="/pessoa/perfil">Meu Perfil</a></li>
-            <li><a href="/pessoa/meus_matches">Meus Matches</a></li>
             <li><a href="/matches/">Top Matches</a></li>
-            <li><a href="/pessoa/sugerir">Sugerir Pratos/Bebidas</a></li>
-            <li><a href="/index/logout">Sair</a></li>
             <li><a href="/index/sobre">Sobre</a></li>
+            <li><a href="/index/login">Login</a></li>
         </ul>
 
-        <a href="#" data-activates="nav-mobile" class="button-collapse">
-            <i class="mdi-navigation-menu"></i>
-        </a>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="sobre.php">Sobre</a></li>
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i
+                    class="mdi-navigation-menu"></i></a>
     </div>
 </nav>
+
 
 <br>
 <h5 align="center">Toque nos cards para ver os comentários</h5>
@@ -98,7 +90,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <p class="comment-det">Buchada & Coca</p>
 
                 <p class="comment-comm">aaaaa<span> - Por: Lucas 2
-                        em 2016-06-08 00:06:52</span></p>
+                        em quarta-feira  8 de junho de 2016 às 00:06</span></p>
             </div>
         </li>
                 <li style="background-color: #FFF" class="avatar">
@@ -118,46 +110,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <p class="comment-det">Buchada & Coca</p>
 
                 <p class="comment-comm">bbbbbbb<span> - Por: Lucas 2
-                        em 2016-06-08 00:06:57</span></p>
-            </div>
-        </li>
-                <li style="background-color: #FFF" class="avatar">
-            <div class="collapsible-header">
-                
-                <b>Buchada & Coca</b>
-
-                <div class="right">
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                                        </div>
-            </div>
-            <div class="collapsible-body" style="background-color: #FFF">
-                <p class="comment-det">Buchada & Coca</p>
-
-                <p class="comment-comm"><span> - Por: Lucas 2
-                        em 2016-06-02 17:29:19</span></p>
-            </div>
-        </li>
-                <li style="background-color: #FFF" class="avatar">
-            <div class="collapsible-header">
-                
-                <b>Buchada & Coca</b>
-
-                <div class="right">
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
-                                                        </div>
-            </div>
-            <div class="collapsible-body" style="background-color: #FFF">
-                <p class="comment-det">Buchada & Coca</p>
-
-                <p class="comment-comm">iiiiiii<span> - Por: Lucas 2
-                        em 2016-06-08 00:07:33</span></p>
+                        em quarta-feira  8 de junho de 2016 às 00:06</span></p>
             </div>
         </li>
                 <li style="background-color: #FFF" class="avatar">
@@ -176,7 +129,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <p class="comment-det">Buchada & Coca</p>
 
                 <p class="comment-comm">ggggggg<span> - Por: Lucas 2
-                        em 2016-06-08 00:07:27</span></p>
+                        em quarta-feira  8 de junho de 2016 às 00:07</span></p>
             </div>
         </li>
                 <li style="background-color: #FFF" class="avatar">
@@ -196,7 +149,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <p class="comment-det">Buchada & Coca</p>
 
                 <p class="comment-comm">ffffff<span> - Por: Lucas 2
-                        em 2016-06-08 00:07:23</span></p>
+                        em quarta-feira  8 de junho de 2016 às 00:07</span></p>
             </div>
         </li>
                 <li style="background-color: #FFF" class="avatar">
@@ -212,7 +165,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <p class="comment-det">prato 2 & Coca</p>
 
                 <p class="comment-comm">eeeeee<span> - Por: Lucas 2
-                        em 2016-06-08 00:07:19</span></p>
+                        em quarta-feira  8 de junho de 2016 às 00:07</span></p>
             </div>
         </li>
                 <li style="background-color: #FFF" class="avatar">
@@ -228,7 +181,26 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <p class="comment-det">prato 2 & Coca</p>
 
                 <p class="comment-comm">ddddddd<span> - Por: Lucas 2
-                        em 2016-06-08 00:07:12</span></p>
+                        em quarta-feira  8 de junho de 2016 às 00:07</span></p>
+            </div>
+        </li>
+                <li style="background-color: #FFF" class="avatar">
+            <div class="collapsible-header">
+                
+                <b>Buchada & Coca</b>
+
+                <div class="right">
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                                        </div>
+            </div>
+            <div class="collapsible-body" style="background-color: #FFF">
+                <p class="comment-det">Buchada & Coca</p>
+
+                <p class="comment-comm">iiiiiii<span> - Por: Lucas 2
+                        em quarta-feira  8 de junho de 2016 às 00:07</span></p>
             </div>
         </li>
                 <li style="background-color: #FFF" class="avatar">
@@ -245,7 +217,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <p class="comment-det">prato 2 & Guaraná</p>
 
                 <p class="comment-comm">cccccccc<span> - Por: Lucas 2
-                        em 2016-06-08 00:07:06</span></p>
+                        em quarta-feira  8 de junho de 2016 às 00:07</span></p>
+            </div>
+        </li>
+                <li style="background-color: #FFF" class="avatar">
+            <div class="collapsible-header">
+                
+                <b>Buchada & Coca</b>
+
+                <div class="right">
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                            <i style="color: #ff9800" class="tiny mdi-action-star-rate"></i>
+                                                        </div>
+            </div>
+            <div class="collapsible-body" style="background-color: #FFF">
+                <p class="comment-det">Buchada & Coca</p>
+
+                <p class="comment-comm"><span> - Por: Lucas 2
+                        em quinta-feira  2 de junho de 2016 às 17:29</span></p>
             </div>
         </li>
         </ul>

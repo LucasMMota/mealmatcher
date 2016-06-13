@@ -1,12 +1,25 @@
 {$head}
 <body style="background-color: #efebe9">
 
-<nav class="#ef5350 red lighten-1" role="navigation">
+{$sidebar_logado}
+{*<nav class="#ef5350 red lighten-1" role="navigation">
     <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">Login</a>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="/pessoa/novo_match">Novo Match!</a></li>
+            <li><a href="/matches/">Top Matches</a></li>
+            <li><a href="/index/sobre">Sobre</a></li>
+        </ul>
 
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="sobre.php">Sobre</a></li>
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i
+                    class="mdi-navigation-menu"></i></a>
     </div>
-</nav>
+</nav>*}
 
 
 <div class="container">

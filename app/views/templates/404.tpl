@@ -1,9 +1,8 @@
 {$head}
-<body onload="initialize()">
-    {$navegacao}
-
+<body>
+{$sidebar_logado}
     <!-- Busca de Imoveis do Portfolio -->
-    <section class="wrapper-lg">
+    <div class="wrapper-lg">
         <div class="container">
             <div class="row">
                 <div class="error-page">
@@ -18,10 +17,10 @@
                     </div><!-- /.error-page -->
             </div><!-- /.row -->
         </div><!-- /.container -->
-    </section>
+    </div>
     <!-- /busca imoveis portfolio -->
 
-    {$footer}
 </body>
+    {$footer}
 
 

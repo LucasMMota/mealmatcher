@@ -1,39 +1,37 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-06-08 20:50:13
+<?php /* Smarty version Smarty-3.1.19, created on 2016-06-13 00:27:53
          compiled from "C:\wamp\www\mealmatcher\app\views\templates\pessoa\login.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:41115758af3576dda2-79273871%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9620575e283977a752-86020812%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0f2995cc5772b58f4d230f4165b2ac28b42c953f' => 
     array (
       0 => 'C:\\wamp\\www\\mealmatcher\\app\\views\\templates\\pessoa\\login.tpl',
-      1 => 1464893847,
+      1 => 1465788089,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '41115758af3576dda2-79273871',
+  'nocache_hash' => '9620575e283977a752-86020812',
   'function' => 
   array (
   ),
   'variables' => 
   array (
     'head' => 0,
+    'sidebar_logado' => 0,
     'footer' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758af3577f657_45669733',
+  'unifunc' => 'content_575e28398208d6_41840625',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758af3577f657_45669733')) {function content_5758af3577f657_45669733($_smarty_tpl) {?><?php echo $_smarty_tpl->tpl_vars['head']->value;?>
+<?php if ($_valid && !is_callable('content_575e28398208d6_41840625')) {function content_575e28398208d6_41840625($_smarty_tpl) {?><?php echo $_smarty_tpl->tpl_vars['head']->value;?>
 
 <body style="background-color: #efebe9">
 
-<nav class="#ef5350 red lighten-1" role="navigation">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Login</a>
+<?php echo $_smarty_tpl->tpl_vars['sidebar_logado']->value;?>
 
-    </div>
-</nav>
+
 
 
 <div class="container">

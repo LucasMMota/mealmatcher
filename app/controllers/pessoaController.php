@@ -66,10 +66,37 @@ class pessoa extends controller
     function sugerir()
     {
         $this->template->setTitle("Sugestão");
-        //$this->template->fetchJS('/files/js/pessoa/perfil.js');
+        $this->template->fetchJS('/files/js/pessoa/sugerir.js');
+
+        if ($_POST) {
+            $comida = isset($_POST['comida']) ? $_POST['comida'] : false;
+            $bebida = isset($_POST['bebida']) ? $_POST['bebida'] : false;
+
+            if (!$comida && !$bebida) {
+                echo json_encode(['type' => 'error']);
+                die;
+            }
+
+            $arrData = [];
+            if ($comida) {
+                $arrData['sug_prato'] = $comida;
+            }
+            if ($bebida) {
+                $arrData['sug_bebida'] = $bebida;
+            }
+            $arrData['pes_id'] = $_SESSION['user']['id'];
+            $sugestaoModel = new SugestaoModel;
+            if ($sugestaoModel->novaSugestao($arrData)) {
+                echo json_encode(['type' => 'success']);
+                die;
+            } else {
+                echo json_encode(['type' => 'error2']);
+                die;
+            }
+        }
 
         $this->template->run();
-        $this->smarty->display("novo_match.tpl");
+        $this->smarty->display("pessoa/sugerir.tpl");
     }
 
     public function novo_match()
@@ -99,5 +126,28 @@ class pessoa extends controller
 
         $this->template->run();
         $this->smarty->display("pessoa/novo_match.tpl");
+    }
+
+    public function minhas_sugestoes()
+    {
+        $this->template->setTitle("Minhas Sugestões");
+        //$this->template->fetchJS('/files/js/pessoa/perfil.js');
+        $arrSugestao = (new SugestaoModel)->minhasSugestoes($_SESSION['user']['id']);
+        $sugestoes = array();
+        foreach ($arrSugestao as $k=>$sugestao) {
+            $arrImplode=[];
+            if ($sugestao['sug_prato'])
+                $arrImplode[] = $sugestao['sug_prato'];
+
+            if ($sugestao['sug_bebida'])
+                $arrImplode[] = $sugestao['sug_bebida'];
+
+            $sugestoes[$k]['sug'] = implode(" & ", $arrImplode);
+            $sugestoes[$k]['data'] = $sugestao['sug_data_insert'];
+        }
+        $this->smarty->assign('sugestoes', $sugestoes);
+
+        $this->template->run();
+        $this->smarty->display("pessoa/minhas_sugestoes.tpl");
     }
 }

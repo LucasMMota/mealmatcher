@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:157855758bf09706a61-85539032%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:28644575e295e0c1667-36484135%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,17 +9,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '157855758bf09706a61-85539032',
+  'nocache_hash' => '28644575e295e0c1667-36484135',
   'variables' => 
   array (
     'js' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5758bf09762dc9_95300472',
+  'unifunc' => 'content_575e295e294a13_57064054',
   'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5758bf09762dc9_95300472')) {function content_5758bf09762dc9_95300472($_smarty_tpl) {?>    <script type="text/javascript" src="http://mealmatcher.localhost/files/js/jquery-2.1.1.min.js"></script>
+<?php if ($_valid && !is_callable('content_575e295e294a13_57064054')) {function content_575e295e294a13_57064054($_smarty_tpl) {?>    <script type="text/javascript" src="http://mealmatcher.localhost/files/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="http://mealmatcher.localhost/files/js/materialize.min.js"></script>
     <script type="text/javascript" src="http://mealmatcher.localhost/files/js/init.js"></script>
     <script type="text/javascript" src="http://mealmatcher.localhost/files/js/FacebookSDK.js"></script>

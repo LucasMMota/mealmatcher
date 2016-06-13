@@ -12,5 +12,5 @@
     {section name=i loop=$css}
         <link href="{$css[i]}" rel="stylesheet" type="text/css"/>
     {/section}
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>

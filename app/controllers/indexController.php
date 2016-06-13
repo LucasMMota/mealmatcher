@@ -89,6 +89,13 @@ class index extends controller
             Header("Location: /pessoa");
         }
     }
+
+    public function sobre(){
+        $this->template->setTitle("Sobre");
+        //$this->template->fetchJS('files/js/pessoa/pessoa.js');
+        $this->template->run();
+        $this->smarty->display("sobre.tpl");
+    }
 }
 
 ?>
