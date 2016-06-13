@@ -115,8 +115,6 @@ class template
             die;
         }*/
         //}
+        }
     }
-
 }
-
-?>
