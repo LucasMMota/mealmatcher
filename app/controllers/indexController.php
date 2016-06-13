@@ -60,7 +60,8 @@ class index extends controller
         //$this->template->fetchJS('files/js/pessoa/pessoa.js');
 
         if ($_POST) {
-            $pessoa = (new PessoaModel())->login($_POST['pes_email'], $_POST['pes_senha']);
+            $objPessoa = (new PessoaModel());
+            $pessoa = $objPessoa->login($_POST['pes_email'], $_POST['pes_senha']);
             if ($pessoa) {
                 $_SESSION['user']['id'] = $pessoa[0]['pes_id'];
                 $_SESSION['user']['nome'] = $pessoa[0]['pes_nome'];
