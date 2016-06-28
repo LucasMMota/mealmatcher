@@ -8,8 +8,6 @@
 <br>
 
 <div style="z-index: 0;" class="slider">
-    <h1>Aguardando Texto</h1>
-
     <h2>Enquanto isso coloco aqui um video para ocupar o lugar</h2>
     <p>O restaurante Casa no Campo é um restaurante de requinte e de ambiente muito agradável, com serviço de qualidade oferece a mais aliciante e variada seleção da cozinha típica paulistana.
         Sua história remonta à época distantes, onde dois irmãos tipicamente paulistanos João Pedro da Costa e Pedro Luis da Costa, ambos nascidos e crescidos no bairro tradicionalismo de São Paulo, a Mooca.
