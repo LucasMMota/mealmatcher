@@ -8,8 +8,7 @@
 <br>
 
 <div style="z-index: 0;" class="slider">
-    <h2>Enquanto isso coloco aqui um video para ocupar o lugar</h2>
-    <p>O restaurante Casa no Campo é um restaurante de requinte e de ambiente muito agradável, com serviço de qualidade oferece a mais aliciante e variada seleção da cozinha típica paulistana.
+    <p style="margin: 65px; font-size: 26px;">O restaurante Casa no Campo é um restaurante de requinte e de ambiente muito agradável, com serviço de qualidade oferece a mais aliciante e variada seleção da cozinha típica paulistana.
         Sua história remonta à época distantes, onde dois irmãos tipicamente paulistanos João Pedro da Costa e Pedro Luis da Costa, ambos nascidos e crescidos no bairro tradicionalismo de São Paulo, a Mooca.
         Descendentes de italianos, os irmãos Costa aprenderam a cozinhar desde pequenos, coisa que faziam enquanto seus pais trabalhavam nas fábricas ali instaladas.
         A fundação do restaurante se deu após serem demitidos de seu trabalho, por serem considerados “baderneiros” após, inspirados pelo crescente movimento socialista nas classes trabalhadoras, organizarem uma greve em 1896. Com a chegada da Compania Antartica Paulista em 1891 e seu crescimento ao longo desses 5 anos o restaurante, em seu inicio, cresceu vertiginosamente com os muitos operários que frequentavam o local.
