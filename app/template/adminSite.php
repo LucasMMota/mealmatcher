@@ -10,11 +10,9 @@ class adminSite extends template {
         $footer = $this->smarty->fetch("admin/comuns/footer.tpl");
         $this->smarty->assign('footer', $footer);
         
-        $sidebar_menu = $this->smarty->fetch("admin/comuns/sidebar_menu.tpl");
-        $this->smarty->assign('sidebar_menu', $sidebar_menu);
-        
-        $header = $this->smarty->fetch("admin/comuns/header.tpl");
-        $this->smarty->assign('header', $header);
+        $sidebar_logado = $this->smarty->fetch("admin/comuns/sidebar_logado.tpl");
+        $this->smarty->assign('sidebar_logado', $sidebar_logado);
+
     }
 
 }

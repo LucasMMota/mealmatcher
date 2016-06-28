@@ -100,5 +100,13 @@ class index extends controller
         $this->smarty->display("sobre.tpl");
     }
 }
+// todo admin
+/*
 
-?>
+crud pratos e bebidas
+rel - matches por dia, matches por mes
+rel - usuarios numero de matches
+rel - matches mais curtidos
+
+
+*/
