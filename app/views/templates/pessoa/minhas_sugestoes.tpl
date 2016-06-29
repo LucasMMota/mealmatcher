@@ -4,7 +4,7 @@
 {$sidebar_logado}
 
 <br>
-<h5 align="center">Suas últimas combinações</h5>
+<h5 align="center">Suas últimas sugestões</h5>
 <br>
 
 <ul class="collapsible popout" data-collapsible="accordion">

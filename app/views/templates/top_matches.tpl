@@ -36,7 +36,7 @@
                 <p class="comment-det">{$match['pra_nome']} & {$match['beb_nome']}</p>
 
                 <p class="comment-comm">{$match['com_descricao']|default:""}<span> - Por: {$match['pes_nome']}
-                        em {$match['data']|date_format:"%A %e de %B de %Y às %H:%M"}</span></p>
+                        </span></p>
             </div>
         </li>
         {foreachelse}
